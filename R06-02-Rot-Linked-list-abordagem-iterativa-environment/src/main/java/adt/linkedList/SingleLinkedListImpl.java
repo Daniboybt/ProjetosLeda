@@ -32,6 +32,7 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 	@Override
 	public T search(T element) {
 		// TODO Auto-generated method stub
+		
 		SingleLinkedListNode<T> current = this.head; 
 		while(!current.isNIL()) {
 			if (current.getData().equals(element)) {
@@ -46,6 +47,7 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 	@Override
 	public void insert(T element) {
 		// TODO Auto-generated method stub
+			
 		SingleLinkedListNode<T> current = this.head; 
 		while(!current.isNIL()) {
 			current = current.getNext();
@@ -57,6 +59,7 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 	@Override
 	public void remove(T element) {
 		// TODO Auto-generated method stub
+		
 		SingleLinkedListNode<T> current = this.head;
 		
 		if(this.head != null && this.head.equals(element)) {
