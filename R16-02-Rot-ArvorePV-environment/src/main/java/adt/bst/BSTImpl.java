@@ -1,7 +1,5 @@
 package adt.bst;
 
-import java.util.Arrays;
-
 import adt.bt.BTNode;
 
 public class BSTImpl<T extends Comparable<T>> implements BST<T> {
